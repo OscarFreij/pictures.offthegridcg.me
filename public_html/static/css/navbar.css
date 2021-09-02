@@ -1,0 +1,40 @@
+.navbar
+{
+    width: 100%;
+    height: auto;
+    margin-bottom: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.navbar > *:nth-child(1)
+{
+    justify-self: start;
+}
+
+.navbar > *:nth-child(1) > span
+{
+    margin-left: 2em;
+}
+
+.navbar > *:nth-child(2)
+{
+    justify-self: end;
+}
+
+.navbar > *
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.navbar > * > span
+{
+    font-size: 1.4em;
+    color: whitesmoke;
+}

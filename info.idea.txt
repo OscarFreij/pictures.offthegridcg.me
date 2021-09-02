@@ -1,0 +1,1 @@
+https://stackoverflow.com/questions/5435211/showing-a-preloading-gif-until-the-image-is-fully-loaded

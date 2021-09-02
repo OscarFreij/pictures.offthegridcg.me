@@ -1,0 +1,100 @@
+body
+{
+    background-color: #323232;
+    color: whitesmoke;
+    margin: 8px 20px;
+    padding: 10px;
+}
+
+.grid
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    justify-items: center;
+    grid-gap: 1em;
+    word-break: break-all;
+}
+
+.grid > *
+{
+    color: inherit;
+    text-decoration: none;
+}
+
+.imageCell
+{
+    position: relative;
+    color: inherit;
+    width: auto;
+    display: grid;
+}
+
+.imageCell:hover > .imageTitle
+{
+    opacity: 1;
+    transition-duration: 0.5s;
+}
+
+.imageCell > img
+{
+    height: auto;
+    max-width: 100%;
+    width: 100vw;
+}
+
+.loading-image
+{
+    position: absolute;
+    justify-self: center;
+    align-self: center;
+    background-color: #3f3f3f88;
+}
+
+.imageTitle
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2em;
+    width: 100%;
+    background-color: #434343;
+    border-radius: 0 0 25px 25px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.albumCell
+{
+    display: grid;
+    grid-template-columns: 10fr, 1fr;
+    justify-items: center;
+    color: inherit;
+    text-decoration: none;
+    width: 50%;
+    border-radius: 25px;
+}
+
+.albumCell > span
+{
+    padding: 0 10px 10px 10px;
+}
+
+.albumCell:hover
+{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.albumCell:hover > .bi-folder-fill
+{
+    transition-duration: 0.25s;
+    color: cadetblue;
+}
+
+.bi-folder-fill
+{
+    transition-duration: 0.25s;
+    font-size: 10em;
+}

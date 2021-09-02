@@ -1,0 +1,17 @@
+Options -Indexes
+
+<Files .htaccess>
+order allow,deny
+require all denied
+</Files>
+
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+  RewriteRule ^(.png|.jpeg) - [F]
+</IfModule>
+
+#Protect Directory
+AuthName "Dialog prompt"
+AuthType Basic
+AuthUserFile /home/oscar/httpPwd/.htpasswd
+Require valid-user
